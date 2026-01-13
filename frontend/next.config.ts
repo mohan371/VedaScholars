@@ -2,9 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // 🔴 Disable dev indicators
-  devIndicators: {
-    buildActivity: false,
-  },
+devIndicators: {
+  appIsrStatus: false, // This is the modern equivalent for ISR status
+},
 
   transpilePackages: ["@apollo/client"],
 
