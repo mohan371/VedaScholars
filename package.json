@@ -10,11 +10,12 @@
     "client": "cd frontend && yarn dev",
     "server": "cd backend && yarn dev",
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install --legacy-peer-deps",
-    "build": "npm run build:backend && npm run build:frontend",
+    "build": "npx tsc",
     "build:backend": "cd backend && npm run build",
     "build:frontend": "cd frontend && npm run build"
   },
   "devDependencies": {
+    "typescript": "^5.0.0",
     "@types/bcrypt": "^6.0.0",
     "@types/jsonwebtoken": "^9.0.10",
     "concurrently": "^8.2.2"
